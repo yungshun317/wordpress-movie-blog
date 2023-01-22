@@ -20,7 +20,7 @@
             </section>
             <section class="menu-area">
                 <nav class="main-menu">
-                    Menu
+                    <?php wp_nav_menu(array("theme_location" => "movie_blog_main_menu", "depth" => 2)); ?>
                 </nav>
             </section>
         </header>

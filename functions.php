@@ -6,3 +6,10 @@ function movie_blog_load_scripts() {
     wp_enqueue_script("dropdown", get_template_directory_uri() . "/js/dropdown.js", array(), "1.0", true);
 }
 add_action("wp_enqueue_scripts", "movie_blog_load_scripts");
+
+register_nav_menus(
+    array(
+        "movie_blog_main_menu" => "Main Menu",
+        "movie_blog_footer_menu" => "Footer Menu"
+    )
+);
